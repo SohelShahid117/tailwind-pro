@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      159. Customizing Font Family, Font Weight, Line Height, and Letter Spacing
+    </title>
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tailwind css connect -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #fff;
+        --font-display: "Oswald", "sans-serif";
+        --font-roboto: "Roboto", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="bg-orange-500 text-3xl font-display text-clifford">
+      159. Customizing Font Family, Font Weight, Line Height, and Letter Spacing
+    </h1>
+
+    <p
+      class="text-xl font-roboto font-extrabold leading-relaxed tracking-normal"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, temporibus
+      nemo, dolor placeat autem adipisci ullam dignissimos molestias fugiat
+      aspernatur at doloribus mollitia? Vitae molestias aspernatur asperiores
+      delectus, doloremque tempore eum. Dicta sapiente dolorum aspernatur
+      mollitia modi ipsa repellat veniam, aperiam magni officia! Cupiditate
+      placeat ex aut alias, tenetur reiciendis.
+    </p>
+  </body>
+</html>
