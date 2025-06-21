@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>165. Grid Layout with Tailwind CSS</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>165. Grid Layout with Tailwind CSS</h2>
+
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-blue-200 p-5">1</div>
+      <div class="bg-blue-300 p-5">2</div>
+      <div class="bg-blue-400 p-5">3</div>
+      <div class="bg-blue-500 p-5">4</div>
+      <div class="bg-blue-600 p-5">5</div>
+      <div class="bg-blue-700 p-5">6</div>
+    </div>
+
+    <h2 class="bg-orange-500 py-5 my-5">Subgrid</h2>
+    <div class="grid grid-cols-4 gap-5">
+      <div class="bg-green-200 p-3">1</div>
+      <div class="bg-green-300 p-3">2</div>
+      <div class="bg-green-400 p-3">3</div>
+      <div class="bg-green-500 p-3">4</div>
+      <div class="bg-green-600 p-3">5</div>
+
+      <!-- special subgrid -->
+      <div class="grid grid-cols-subgrid col-span-3">
+        <div class="bg-green-700 p-3 col-start-2">6</div>
+      </div>
+    </div>
+
+    <h2 class="bg-indigo-500 p-5 m-5">Grid details</h2>
+    <div class="grid grid-cols-2 grid-rows-5 gap-4">
+      <div class="bg-orange-200 p-5">01</div>
+      <div class="bg-orange-300 p-5">02</div>
+      <div class="bg-orange-400 p-5">03</div>
+      <div class="bg-orange-200 p-5">04</div>
+      <div class="bg-orange-300 p-5">05</div>
+
+      <div class="row-span-3 grid grid-rows-subgrid gap-4">
+        <div class="row-start-2 bg-orange-400 p-5">06</div>
+      </div>
+
+      <div class="bg-orange-500 p-5">07</div>
+
+      <div class="bg-orange-600 p-5">08</div>
+    </div>
+
+    <h2 class="my-8 bg-green-600 p-5">Building complex grid structure</h2>
+    <p class="my-5">grid helps to prepare complex Structure</p>
+    <div class="grid grid-cols-4 gap-4">
+      <div class="p-5 bg-red-200 col-span-4 text-center">Header</div>
+      <div class="p-5 bg-red-500 col-span-1 text-center">Sidebar</div>
+      <div class="p-5 bg-red-400 col-span-2 text-center">Main Content</div>
+      <div class="p-5 bg-red-500 col-span-1 text-center">Right Panel</div>
+      <div class="p-5 bg-red-200 col-span-4 text-center">footer</div>
+    </div>
+  </body>
+</html>
