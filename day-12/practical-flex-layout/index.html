@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>164. Practical Example of Flex Box (Design Product Cards)</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <h2 class="bg-orange-500 text-white">
+      164. Practical Example of Flex Box (Design Product Cards)
+    </h2>
+
+    <section class="px-4 py-8 lg:py-16 max-w-screen-xl mx-auto">
+      <h1 class="text-white text-center text-2xl md:text-4xl m-5">
+        Responsive product card using flexbox
+      </h1>
+
+      <!-- flex container -->
+      <div class="flex flex-row gap-5 justify-center flex-wrap">
+        <!-- card 1 -->
+        <div
+          class="w-80 bg-white flex flex-col shadow-md rounded-2xl overflow-hidden hover:-translate-y-5 cursor-pointer transition-transform duration-500"
+        >
+          <img
+            class="w-full h-52"
+            src="https://images.unsplash.com/photo-1609096458733-95b38583ac4e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="card 1 img"
+            srcset=""
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-bold">Product Name</h2>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              voluptas harum repellat labore maxime doloribus voluptatum ducimus
+              quia illo. Necessitatibus!
+            </p>
+
+            <div class="flex justify-between items-center mt-4">
+              <p class="text-xl font-bold text-green-500">$29.99</p>
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div
+          class="w-80 bg-white flex flex-col shadow-md rounded-2xl overflow-hidden hover:-translate-y-5 cursor-pointer transition-transform duration-500"
+        >
+          <img
+            class="w-full h-52"
+            src="https://images.unsplash.com/photo-1595161397851-cb282659df5e?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="card 2 img"
+            srcset=""
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-bold">Product Name</h2>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              voluptas harum repellat labore maxime doloribus voluptatum ducimus
+              quia illo. Necessitatibus!
+            </p>
+
+            <div class="flex justify-between items-center mt-4">
+              <p class="text-xl font-bold text-green-500">$29.99</p>
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="w-80 bg-white flex flex-col shadow-md rounded-2xl overflow-hidden hover:-translate-y-5 cursor-pointer transition-transform duration-500"
+        >
+          <img
+            class="w-full h-52"
+            src="https://images.unsplash.com/photo-1596207498818-edb80522f50b?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="card 3 img"
+            srcset=""
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-bold">Product Name</h2>
+            <p class="text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              voluptas harum repellat labore maxime doloribus voluptatum ducimus
+              quia illo. Necessitatibus!
+            </p>
+
+            <div class="flex justify-between items-center mt-4">
+              <p class="text-xl font-bold text-green-500">$29.99</p>
+              <button
+                class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
