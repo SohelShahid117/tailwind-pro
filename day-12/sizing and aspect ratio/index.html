@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>166. Sizing and Aspect Ratio</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --aspect-retro: 3/ 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="">166. Sizing and Aspect Ratio</h1>
+
+    <!-- width & height -->
+
+    <div class="bg-orange-500 w-40 h-20">Width : 160px and height : 80px</div>
+
+    <div class="bg-blue-400 max-w-96 h-20">Max width</div>
+    <div class="bg-green-400 min-w-80 h-20">Min width</div>
+    <div class="bg-indigo-400 min-h-40">Min height</div>
+    <div class="bg-red-400 max-h-60">max height</div>
+
+    <h2>Aspect ratio</h2>
+
+    <div class="w-80 aspect-retro">
+      <img
+        class="w-full h-full object-cover"
+        src="https://images.unsplash.com/photo-1526958938731-27f1ccdb1817?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt=""
+        srcset=""
+      />
+    </div>
+
+    <h2>Controlling overflow</h2>
+    <div class="bg-green-400 w-60 h-32 overflow-auto">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat
+        saepe corporis dolorem ullam. Aut, vel aliquam aperiam perspiciatis
+        tempore fugit sapiente maxime id explicabo veniam unde, architecto
+        cumque! Molestias doloribus, aliquid corrupti tempore, necessitatibus
+        asperiores temporibus quis quisquam ipsam omnis quas. Quasi saepe
+        voluptas maxime nemo soluta ullam dolore.
+      </p>
+    </div>
+    <div class="my-10">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem repellat
+        saepe corporis dolorem ullam. Aut, vel aliquam aperiam perspiciatis
+        tempore fugit sapiente maxime id explicabo veniam unde, architecto
+        cumque! Molestias doloribus, aliquid corrupti tempore, necessitatibus
+        asperiores temporibus quis quisquam ipsam omnis quas. Quasi saepe
+        voluptas maxime nemo soluta ullam dolore.
+      </p>
+    </div>
+  </body>
+</html>
