@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>170. Working with Images and Backgrounds</title>
+
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  </head>
+  <body class="space-y-5">
+    <h1>170. Working with Images and Backgrounds</h1>
+
+    <div class="h-52 w-full bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]  bg-center flex items-center justify-center bg-cover">
+        <p class="text-center text-xl">Beautiful background</p>
+    </div>
+
+    <div>
+        <p>styling image-->object cover</p>
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-80 h-40 object-cover rounded-lg shadow-md">
+
+        <p>Object contain</p>
+
+         <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-80 h-40 object-contain rounded-lg shadow-md mx-5 my-2 p-5">
+    </div>
+
+        <p>Object fill</p>
+
+         <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1174&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-80 h-40 object-fill rounded-lg shadow-md mx-5 my-2 p-5">
+    </div>
+    <div class="w-full h-64 bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center  relative">
+        <div class="absolute  inset-0 bg-black/70 hover:bg-black/0 flex items-center justify-center backdrop-blur-lg">
+            <p class="text-white ">opacity & background blur</p>
+        </div>
+    </div>
+  </body>
+</html>
