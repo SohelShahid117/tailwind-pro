@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      169. Positioning and Controlling the Stacking Order with z-index
+    </title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>169. Positioning and Controlling the Stacking Order with z-index</h2>
+
+    <!-- absolute & relative position -->
+
+    <div class="m-5 bg-gray-300 relative h-52 p-5">
+      <div class="bg-blue-500 text-white p-5 absolute bottom-0 right-10">
+        I m absolute position
+      </div>
+      <p>i m relative position</p>
+    </div>
+
+    <!-- fixed  position-->
+    <div class="fixed bottom-0 right-0 bg-red-300 p-2">
+      I m fixed to the bottom right corner
+    </div>
+
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ad quo
+      voluptatibus expedita nihil earum ipsam deserunt, odit vitae, magnam iusto
+      et deleniti repudiandae. Magni, sunt? Dolore expedita error accusamus
+      praesentium. Cumque veniam est quasi laborum? Harum, nisi suscipit modi
+      doloremque iure excepturi ullam in odio repudiandae provident facere
+      optio? Architecto voluptas fuga aspernatur deserunt minima ea,
+      voluptatibus in, ducimus hic laborum id assumenda accusantium neque quasi
+      minus quod veniam eveniet aliquam culpa non ipsum facilis natus officia
+      repellendus. Quibusdam nesciunt at eius laborum hic sapiente ducimus
+      tenetur quos reprehenderit ab. Facilis, voluptas doloremque temporibus
+      aspernatur numquam accusamus ipsa repellendus qui sunt labore dolor
+      molestiae vero reiciendis id distinctio! Praesentium molestias, unde sed
+      dolor animi neque, quaerat cum doloremque a ratione voluptates provident
+      dolore error? Eos placeat nesciunt odit delectus eaque, totam magnam ipsa
+      alias aspernatur explicabo aut ipsam accusamus error, nobis, optio
+      doloribus eveniet iste expedita consectetur numquam? Rem optio nihil
+      reprehenderit delectus temporibus! Dolorem, neque excepturi ut qui sed
+      quia animi reiciendis sequi dolorum? Magni, nam deserunt ullam natus et
+      veniam modi consectetur dolorum necessitatibus adipisci quae incidunt
+      tenetur iusto. Beatae esse fuga itaque illo dolorem earum corrupti tempora
+      non ratione neque quae et sed ducimus, obcaecati pariatur maiores, natus
+      vitae animi. Qui fugit repellat rerum tempore. Minima nam, laudantium
+      commodi quam officia dolores consectetur nihil nemo aliquid? Id, impedit
+      quaerat, iste enim quae obcaecati ipsum nemo corrupti minus dolore magni.
+      Impedit beatae quae sapiente dignissimos autem nemo accusantium placeat
+      ullam debitis vel saepe aperiam odio quis est eaque magnam sed assumenda
+      repellendus facere tempora, eos alias similique natus? Tenetur voluptatem
+      vel, officia obcaecati consectetur dolorum temporibus maxime eius optio
+      similique illo et. Porro quisquam odio earum doloremque debitis quia
+      minus. In, deserunt? Blanditiis provident id nobis fugiat repellat. Ex
+      asperiores dolor fugit pariatur ad praesentium, consequuntur laudantium!
+      s! Dolorem, neque excepturi ut qui sed quia animi reiciendis sequi
+      dolorum? Magni, nam deserunt ullam natus et veniam modi consectetur
+      dolorum necessitatibus adipisci quae incidunt tenetur iusto. Beatae esse
+      fuga itaque illo dolorem earum corrupti tempora non ratione neque quae et
+      sed ducimus, obcaecati pariatur maiores, natus vitae animi. Qui fugit
+      repellat rerum tempore. Minima nam, laudantium commodi quam officia
+      dolores consectetur nihil nemo aliquid? Id, impedit quaerat, iste enim
+      quae obcaecati ipsum nemo corrupti minus dolore magni. Impedit beatae quae
+      sapiente dignissimos autem nemo accusantium placeat ullam debitis vel
+      saepe aperiam odio quis est eaque magnam sed assumenda repellendus facere
+      tempora, eos alias similique natus? Tenetur voluptatem vel, officia
+      obcaecati consectetur dolorum temporibus maxime eius optio similique illo
+      et. Porro quisquam odio earum doloremque debitis quia minus. In, deserunt?
+      Blanditiis provident id nobis fugiat repellat. Ex asperiores dolor fugit
+      pariatur ad praesentium, consequuntur laudantium!
+    </div>
+
+    <p class="bg-green-300 p-5">controlling the stacking order</p>
+    <div class="h-52 bg-orange-200 relative my-5">
+      <div class="absolute bg-blue-600 p-5">
+        I m on the topppppppppppppppppppppppppppppppppppp
+      </div>
+      <div class="absolute bg-yellow-600 right-0 bottom-0 p-5">
+        I m on the underneath
+      </div>
+    </div>
+    <div class="h-52 bg-orange-200 relative">
+      <div class="absolute bg-blue-600 p-5 top-4 left-4 z-10">
+        I m on the topppppppppppppppppppppppppppppppppppp
+      </div>
+      <div class="absolute bg-yellow-600 top-10 left-10 p-5 z-0">
+        I m on the underneath
+      </div>
+    </div>
+  </body>
+</html>
